@@ -1,2 +1,31 @@
-# React-Native-Animated-Gradient-Border-Text-Button
-Example of a gradient animated border implementation in React Native App
+This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+
+# Example of creating a gradient animated border and button in the React Native application
+
+# Getting Started
+
+## Install modules:
+
+```npm install```
+
+### Install for iOS:
+
+```
+cd ios
+pod install
+```
+
+## Start
+
+```bash
+# using npm
+npm start
+
+# OR using Yarn
+yarn start
+```
+## Result
+
+### Demo
+
+<img src="https://github.com/zahoruiko/React-Native-Animated-Gradient-Border-Text-Button/blob/main/gitImages/video.gif" width="240" />
