@@ -7,27 +7,25 @@ import GradientText from './components/GradientText';
 function App(): JSX.Element {
   const HEIGHT = Dimensions.get('window').height * 0.8;
   const WIDTH = Dimensions.get('window').width * 0.8;
-  
+
   const handleButtonTap = () => console.log('Click!');
 
   return (
     <SafeAreaView style={styles.container}>
       <AnimatedGradientBorder width={WIDTH} height={HEIGHT}>
-        <>
-          <View style={styles.textContainer}>
-            <GradientText gradientColors={['magenta', 'darkorange']} style={styles.text}>
-              Text
-            </GradientText>
-          </View>
-          <AnimatedGradientButton
-            title={'Click me!'}
-            width={200}
-            height={75}
-            onPress={handleButtonTap}
-            titleGradientColors={['magenta', 'darkorange']}
-            style={styles.buttonText}
-          />
-        </>
+        <View style={styles.textContainer}>
+          <GradientText gradientColors={['magenta', 'darkorange']} style={styles.text}>
+            Text
+          </GradientText>
+        </View>
+        <AnimatedGradientButton
+          title={'Click me!'}
+          width={200}
+          height={75}
+          onPress={handleButtonTap}
+          titleGradientColors={['magenta', 'darkorange']}
+          style={styles.buttonText}
+        />
       </AnimatedGradientBorder>
     </SafeAreaView>
   );
@@ -47,12 +45,11 @@ const styles = StyleSheet.create({
     marginBottom: 30
   },
   text: {
-    fontSize: 46, 
+    fontSize: 46,
     fontWeight: 'bold'
   },
   buttonText: {
-    fontSize: 23, 
+    fontSize: 23,
     fontWeight: 'bold'
   }
-
 });

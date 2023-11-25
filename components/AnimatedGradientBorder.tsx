@@ -3,7 +3,7 @@ import { StyleSheet, View } from 'react-native';
 import LinearGradient from 'react-native-linear-gradient';
 
 export type TGradientBorderProps = {
-  children: JSX.Element;
+  children: JSX.Element | JSX.Element[];
   width: number;
   height: number;
   gradientColors?: string[];
